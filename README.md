@@ -21,16 +21,16 @@ We timed the execution of the program 10 times and found the average time it too
 This is the times before optimization:  
 
 ```
-Run 0: 152.073 ms
-Run 1: 104.019 ms
-Run 2: 66.9943 ms
-Run 3: 88.3265 ms
-Run 4: 64.8921 ms
-Run 5: 52.9183 ms
-Run 6: 53.6571 ms
-Run 7: 53.3412 ms
-Run 8: 96.7388 ms
-Run 9: 87.2514 ms
+Run 1: 152.073 ms
+Run 2: 104.019 ms
+Run 3: 66.9943 ms
+Run 4: 88.3265 ms
+Run 5: 64.8921 ms
+Run 6: 52.9183 ms
+Run 7: 53.6571 ms
+Run 8: 53.3412 ms
+Run 9: 96.7388 ms
+Run 10: 87.2514 ms
 
 Average (mean): 82.02123 ms
 ```  
@@ -55,16 +55,16 @@ New result:
 ![img](img/java_profiler_changed_2.png)
 
 ```
-Run 0: 82.226 ms
-Run 1: 34.3938 ms
-Run 2: 58.0026 ms
-Run 3: 40.7641 ms
-Run 4: 30.4765 ms
-Run 5: 39.6008 ms
-Run 6: 41.5937 ms
-Run 7: 42.4653 ms
-Run 8: 52.4299 ms
-Run 9: 39.8449 ms
+Run 1: 82.226 ms
+Run 2: 34.3938 ms
+Run 3: 58.0026 ms
+Run 4: 40.7641 ms
+Run 5: 30.4765 ms
+Run 6: 39.6008 ms
+Run 7: 41.5937 ms
+Run 8: 42.4653 ms
+Run 9: 52.4299 ms
+Run 10: 39.8449 ms
 
 Average (mean): 46.17976 ms
 ```
