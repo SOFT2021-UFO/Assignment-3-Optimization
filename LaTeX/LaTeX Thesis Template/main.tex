@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   CPHBUSINESS THESIS TEMPLATE
+% 
+%   Originally by Thomas S. N. Ebsen (cph-te52@cphbusiness.dk)
+%   This version Copyright (c) 2021 Thomas S. N. Ebsen
+%
+%   Board permissions are granted to use, modify, and distribute this software
+%   as specified in the MIT License included in this distribution's LICENSE file.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, width=150mm, top=25mm, bottom=25mm]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,LE]{Thesis Title}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[LO,RE]{Chapter \thechapter}
+\fancyfoot[CO,RE]{Thomas Stevns Nielsen Ebsen}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\usepackage[sorting=none]{biblatex}
+\addbibresource{pages/references.bib}
+
+\usepackage[autostyle]{csquotes} 
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\title{
+    {asdasd thesis title}\\
+    {\large Subtitle}\\
+    {\includegraphics{cphbusiness-small.png}}
+}
+\author{Thomas Stevns Nielsen Ebsen}
+\date{\today}
+
+\begin{document}
+
+\input{pages/titlepage}
+
+\input{pages/abstract.tex}
+
+\chapter*{Acknowledgement}
+\input{pages/acknowledgement.tex}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter{Introduction}
+\input{pages/chapters/introduction}
+
+\chapter{Assignment Tasks}
+\input{pages/chapters/task01.tex}
+\input{pages/chapters/task02.tex}
+
+\chapter{Clearing requirements for \ref{second-task}}
+\input{pages/chapters/danishletters.tex}
+\input{pages/chapters/graphics.tex}
+\input{pages/chapters/referencing.tex}
+
+
+\chapter{Conclusion}
+\input{pages/chapters/conclusion.tex}
+
+\appendix
+\chapter{Appendix Title}
+\input{pages/chapters/appendix.tex}
+
+\printbibliography
+
+\listoftodos
+
+\end{document}
