@@ -47,6 +47,9 @@ BufferedReader reader = new BufferedReader(fileReader,10000);
 
 New result:
 
+![img](img/java_profiler_changed_1.png)
+![img](img/java_profiler_changed_2.png)
+
 ```
 Run 0: 82.226 ms
 Run 1: 34.3938 ms
