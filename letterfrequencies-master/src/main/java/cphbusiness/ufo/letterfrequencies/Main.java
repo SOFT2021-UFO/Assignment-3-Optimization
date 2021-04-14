@@ -1,13 +1,8 @@
 package cphbusiness.ufo.letterfrequencies;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.Reader;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.io.*;
+import java.util.*;
+
 import static java.util.stream.Collectors.toMap;
 
 /**
@@ -19,14 +14,41 @@ import static java.util.stream.Collectors.toMap;
 public class Main {
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
+        double[] runTimes = new double[10];
         String fileName = System.getProperty("user.dir") + "/src/main/resources/FoundationSeries.txt";
-        Reader reader = new FileReader(fileName);
+        Timer timer = new Timer();
+        timer.play();
+        //Reader reader = new FileReader(fileName);
+        FileReader fileReader = new FileReader(fileName);
+        BufferedReader reader = new BufferedReader(fileReader,10000);
         Map<Integer, Long> freq = new HashMap<>();
         tallyChars(reader, freq);
         print_tally(freq);
+
+        //for(int i = 0; i < 10; i++) {
+        //   Timer timer = new Timer();
+        //    timer.play();
+        //    //Reader reader = new FileReader(fileName);
+        //    FileReader fileReader = new FileReader(fileName);
+        //    BufferedReader reader = new BufferedReader(fileReader,10000);
+        //    Map<Integer, Long> freq = new HashMap<>();
+        //    tallyChars(reader, freq);
+        //   double timeItTookToRunCode = timer.check();
+        //    runTimes[i] = timeItTookToRunCode;
+        //}
+
+        //for (int i = 0; i < runTimes.length; i++) {
+        //    System.out.println("Run " + i + ": " + (runTimes[i] * 1_000 + " ms"));
+        //}
+        //System.out.println("Average: " + (findSumUsingStream(runTimes) / runTimes.length) * 1_000 + " ms");
     }
 
-    private static void tallyChars(Reader reader, Map<Integer, Long> freq) throws IOException {
+
+    //public static double findSumUsingStream(double[] array) {
+    //    return Arrays.stream(array).sum();
+    //}
+
+    private static void tallyChars(BufferedReader reader, Map<Integer, Long> freq) throws IOException {
         int b;
         while ((b = reader.read()) != -1) {
             try {
