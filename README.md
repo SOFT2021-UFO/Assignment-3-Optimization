@@ -1,4 +1,13 @@
 # Assignment-3-Optimization
+- Jonatan Bakke https://github.com/JonatanMagnusBakke
+- Jonas Hein - https://github.com/Zenzus
+- Thomas Ebsen - https://github.com/Srax 
+- [Assignment](/Misc/ExamProjectRequirements.pdf)
+- [Java Program](/letterfrequencies)
+- [LaTeX Hand-in PDF](/LaTeX/main.pdf)
+
+# Project
+- 
 
 # Specs
 ### Specs of the machine used to perform the tests:
