@@ -1,6 +1,10 @@
 # Assignment-3-Optimization
- 
 
+# Specs
+### Specs of the machine used to perform the tests:
+**CPU**: Intel(R) Core(TM) i5-7300HQ CPU @2.50GHz  
+**Ram**: 8gb Single Channel 2400MHz  
+**OS:** Windows 10 Home (OS Build 19041.867)
 
 # Task 1
 ## Find a point in your program that can be optimized (for speed), for example by using a profiler.
