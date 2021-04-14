@@ -6,9 +6,6 @@
 - [Java Program](/letterfrequencies)
 - [LaTeX Hand-in PDF](/LaTeX/main.pdf)
 
-# Project
-- 
-
 # Specs
 ### Specs of the machine used to perform the tests:
 **CPU**: Intel(R) Core(TM) i5-7300HQ CPU @2.50GHz  
