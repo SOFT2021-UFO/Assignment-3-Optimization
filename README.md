@@ -2,7 +2,7 @@
 - Jonatan Bakke https://github.com/JonatanMagnusBakke
 - Jonas Hein - https://github.com/Zenzus
 - Thomas Ebsen - https://github.com/Srax 
-- [Assignment](/Misc/ExamProjectRequirements.pdf)
+- [Assignment](/assignment.pdf)
 - [Java Program](/letterfrequencies)
 - [LaTeX Hand-in PDF](/LaTeX/main.pdf)
 
